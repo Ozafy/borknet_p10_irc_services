@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<words>
+ <howto>
+  <info><![CDATA[This is a comment section, it will be used to explain the format of the file]]></info>
+  <info><![CDATA[This file should always be wellformed XML, you can validate it here:]]></info>
+  <info><![CDATA[http://www.w3schools.com/XML/xml_validator.asp]]></info>
+  <info><![CDATA[Tags should always be enclosed by a CDATA block.]]></info>
+  <info><![CDATA[You can add words or sentances as you please.]]></info>
+  <info><![CDATA[Each can get a score between 1-100]]></info>
+  <info><![CDATA[Normal spamscan counts are:]]></info>
+  <info><![CDATA[Any text the user types: 16]]></info>
+  <info><![CDATA[Links or channels: 64]]></info>
+  <info><![CDATA[80 Will warn the user of his behavior]]></info>
+  <info><![CDATA[100 is a kill]]></info>
+  <info><![CDATA[Please note that points given here will be added to the user's total.]]></info>
+ </howto>
+ <spam>
+  <word><![CDATA[mooses suck!]]></word>
+  <score><![CDATA[100]]></score>
+ </spam>
+</words>

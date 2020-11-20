@@ -1,0 +1,20 @@
+echo "Do you want to delete the old log files? (Y/n)"
+read log
+if [[ $log != "n"  ]]
+then
+echo "Removing old logs..."
+rm nohup.out
+rm debug.*
+echo "Done."
+fi
+echo "Do you want to start in debug mode? (Y/n)"
+read debug
+echo "Starting services..."
+export CLASSPATH=${PWD%/*}:${PWD%/*}/borknet_services/lib/sqlite-jdbc-3.7.2.jar:$CLASSPATH
+if [[ $log != "n"  ]]
+then
+nohup java borknet_services.Start -d &
+else
+nohup java borknet_services.Start &
+fi
+echo "Done."
